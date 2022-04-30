@@ -2,5 +2,34 @@
 {
     margin: 0;
     padding: 0;
-    background-color: rgb(187, 185, 185);;
+    background-color: rgb(209, 203, 203);;
+}
+#res-top-headings
+{
+    display: none;
+}
+#top-options
+{
+    margin-bottom: 10px;
+}
+#fb-icon
+{
+    font-size: 40px;      
+    background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
+    background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
+    background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color:transparent;
+}
+#fb-icon:before {
+    display: inline;
+  }
+@media all and (max-width:900px)
+{
+    #res-top-headings
+    {
+        display: visible;
+    }
 }
