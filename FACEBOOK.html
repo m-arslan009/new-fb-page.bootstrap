@@ -15,24 +15,197 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     </head>
-    <body>
-        <div class="container-fluid">
+    <body  style="background-color: rgb(241, 238, 238); overflow-x:hidden ;">
+        <div class="container-fluid" style="margin: 0; padding: 0;">
             <div class="top-div">
-                <div class="row" id="res-top-headings">
-                    <div class="col-sm-6">
-                        <h4>Facebook</h4>
+                <div class="res-top-heading">
+                    <div class="row">
+                        <div class="col-sm-8" style="background-color: gray;">
+                            <h4>Facebook</h4>
+                        </div>
+                        <div class="col-sm-4" id="res-top-right" style="background-color: green;">
+                            <i class='fas fa-search' id="top-right-icon"></i>
+                            <i class='fab fa-facebook-messenger' id="top-right-icon"></i>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <h4 style="float: right;">youtube</h4>
-                    </div>
+                        <div class="res-top-icon">
+                            <i class='fas fa-home' style='font-size:27px'></i>
+                            <i class="fab fa-youtube" style='font-size:27px'></i>
+                            <div id="grp"><i class="fas fa-users" style="font-size:20px;" id="group"></i></div>
+                            <i class="fa fa-bell" style="font-size:27px"></i>
+                            <i class='fas fa-bars' style='font-size:27px'></i>
+                        </div>
                 </div>
                 <div class="row" id="top-options">
-                    <div class="col-sm-4">
-                        <i class='fab fa-facebook' style='font-size: 30px;' id="fb-icon"></i>
+                    <div class="col-sm-3" id="first">
+                        <i class='fab fa-facebook' style='font-size: 40px;' id="fb-icon"></i>
+                        <div class="search-area">
+                            <i class='fas fa-search' style='font-size: 17px; color: rgb(129, 129, 129);'></i>
+                            <input type="search" placeholder="Searech Facebook" style="outline: none; border: none;" id="search-input">
+                        </div>
+                    </div>
+                    <div class="col-sm-6" id="second" style="display: flex; flex-direction: row;">
+                        <i class='fas fa-home' style='font-size:29px'></i>
+                        <i class="fab fa-youtube" style='font-size:29px'></i>
+                        <i class="fa fa-store" style='font-size:29px'></i>
+                        <div id="grp"><i class="fas fa-users" style="font-size:22px;" id="group"></i></div>
+                        <i class="fas fa-puzzle-piece" style="font-size: 29px;"></i>
+                    </div>
+                    <div class="col-sm-3" id="third" style="background-color: teal;">
+                        <div class="profile">
+                            <img src="arslan.jpg" class="images">
+                            <p class="name-heading">Muhamm...</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <hr>
+            <div class="row" id="body">
+                <div class="col-sm-3 left-options-div">
+                    <div class="shortcuts">
+                        <div class="no-1">
+                            <img src="arslan.jpg" alt="image" width="30px" height="30px" style="border-radius: 50%;">
+                            <p class="naming" style="margin-top: 5px;">Muhammad Arslan</p>
+                        </div>
+                        <div class="no-1">
+                            <i class="fad fa-users styling"></i>
+                            <p  class="naming">Friends</p>
+                        </div>
+                        <div class="no-1">
+                            <i class="fas fa-bookmark" style="font-size: 25px; padding-left: 5px;"></i>
+                            <p class="naming" style="margin-left: 15px;">Saved</p>
+                        </div>
+                        <div class="no-1">
+                            <i class="fas fa-users styling"></i>
+                            <p id="naming" style="margin-left: 15px; font-size:15px;">Groups</p>
+                        </div>
+                        <div class="no-1">
+                            <i class="fa fa-store styling" style="font-size: 20px;"></i>
+                            <p class="naming">Marketplace</p>
+                        </div>
+                        <div class="no-1">
+                            <i class="fab fa-youtube styling"></i>
+                            <p class="naming">Watch</p>
+                        </div>
+                        <div class="no-1">
+                            <i class="	far fa-clock styling" style="font-size: 20px;"></i>
+                            <p class="naming">Memories</p>
+                        </div>
+                        <div class="no-1">
+                            <i class="far fa-flag styling"></i>
+                            <p class="naming">Pages</p>
+                        </div>
+                        <div class="no-1-1">
+                            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" id="col-btn">
+                                <i class="fa fa-chevron-down" style="font-size: 15px;" id="drop-arrow"></i>
+                                <p style="margin: 8px 8px 8px 15px;">See More</p>
+                            </button>
+                        </div>
+                                <div id="demo" class="collapse">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                    </div>
+                    <hr id="line" size="1px">
+                    <div class="short-cut">
+                        <h3 style="margin-left: 20px; font-size: 20px; font-weight: bold;">Your Shortcuts</h3>
+                        <div class="no-1">
+                            <img src="school.png" alt="image" class="img">
+                            <p style="margin: 10px;">W3school</p>
+                        </div>
+                        <div class="no-1">
+                            <img src="college.PNG" alt="image" class="img">
+                            <p style="margin: 10px;">Piass Socity</p>
+                        </div>
+                        <div class="no-1">
+                            <img src="school1.jpg" alt="image" class="img">
+                            <p style="margin: 10px;">Life of School</p>
+                        </div>
+                        <div class="minidiv">
+                            <a href="youtube.com" id="raaz">Privacy </a><span> &#8729;</span>
+                            <a href="youtube.com" id="condition">Terms</a><span> &#8729;</span>
+                            <a href="youtube.com" id="mashoori">Advertising</a><span> &#8729;</span>
+                            <a href="youtube.com" id="pasand">Ad choices</a><br><span>&#8729;</span>
+                            <a href="youtube.com" id="biscut">Cookies</a><span> &#8729;</span>
+                            <a href="youtube.com" style="text-decoration: none;">More</a><span> &#8729;</span>
+                            <span style="font-size: 12px;">Meta &copy; 2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="wrap">
+                        <div class="story">
+                            <div class="story-s">
+                                <img class="image" src="" alt="">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <img class="avatar" src="usman.jpeg" alt="">
+                                    <h4>add to story</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story-s">
+                                <img class="image" src="school1.jpg" alt="">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <img class="avatar" src="" alt="">
+                                    <h4>add to story</h4>
+                                </div>
+                            </div>
+                        </div><div class="story">
+                            <div class="story-s">
+                                <img class="image" src="papa.PNG" alt="">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <img class="avatar" src="" alt="">
+                                    <h4>add to story</h4>
+                                </div>
+                            </div>
+                        </div><div class="story">
+                            <div class="story-s">
+                                <img class="image" src="usman.jpeg" alt="">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <img class="avatar" src="" alt="">
+                                    <h4>add to story</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story-s">
+                                <img class="image" src="school1.jpg" alt="">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <img class="avatar" src="" alt="">
+                                    <h4>add to story</h4>
+                                </div>
+                            </div>
+                        </div><div class="story">
+                            <div class="story-s">
+                                <img class="image" src="papa.PNG" alt="">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <img class="avatar" src="" alt="">
+                                    <h4>add to story</h4>
+                                </div>
+                            </div>
+                        </div><div class="story">
+                            <div class="story-s">
+                                <img class="image" src="usman.jpeg" alt="">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <img class="avatar" src="" alt="">
+                                    <h4>add to story</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <h3>arslan</h3>
+                </div>
+            </div>
         </div>
     </body>
 </html>
