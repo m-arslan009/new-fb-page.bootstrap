@@ -8,24 +8,20 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.0/css/all.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.0.11/css/all.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body  style="background-color: rgb(241, 238, 238); overflow-x:hidden ;">
         <div class="container-fluid" style="margin: 0; padding: 0;">
             <div class="top-div">
                 <div class="res-top-heading">
                     <div class="row">
-                        <div class="col-sm-8" style="background-color: gray;">
-                            <h4>Facebook</h4>
-                        </div>
-                        <div class="col-sm-4" id="res-top-right" style="background-color: green;">
-                            <i class='fas fa-search' id="top-right-icon"></i>
-                            <i class='fab fa-facebook-messenger' id="top-right-icon"></i>
+                        <div class="col-sm-8 res-top-style"background-color: gray;">
+                            <h4 id="facebook">Facebook</h4>
+                            <div class="res-top-mini-icon">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </div>
                         </div>
                     </div>
                         <div class="res-top-icon">
@@ -45,22 +41,28 @@
                         </div>
                     </div>
                     <div class="col-sm-6" id="second" style="display: flex; flex-direction: row;">
-                        <i class='fas fa-home' style='font-size:29px'></i>
-                        <i class="fab fa-youtube" style='font-size:29px'></i>
-                        <i class="fa fa-store" style='font-size:29px'></i>
-                        <div id="grp"><i class="fas fa-users" style="font-size:22px;" id="group"></i></div>
-                        <i class="fas fa-puzzle-piece" style="font-size: 29px;"></i>
+                        <i class='fas fa-home' style='font-size:25px'></i>
+                        <i class="fab fa-youtube" style='font-size:25px'></i>
+                        <i class="fa fa-store" style='font-size:25px'></i>
+                        <div id="grp"><i class="fas fa-users" style="font-size:18px;" id="group"></i></div>
+                        <i class="fas fa-puzzle-piece" style="font-size: 25px;"></i>
                     </div>
-                    <div class="col-sm-3" id="third" style="background-color: teal;">
+                    <div class="col-sm-3" id="third" >
                         <div class="profile">
                             <img src="arslan.jpg" class="images">
                             <p class="name-heading">Muhamm...</p>
                         </div>
+                        <div class="top-right-icon">
+                            <i class="fa fa-th" aria-hidden="true"></i>
+                            <i class='fab fa-facebook-messenger'></i>
+                            <i class='fas fa-bell'></i>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row" id="body">
-                <div class="col-sm-3 left-options-div">
+            <div class="row " id="body">
+                <div class="col-sm-3 left-options-div" style="height: 50%;">
                     <div class="shortcuts">
                         <div class="no-1">
                             <img src="arslan.jpg" alt="image" width="30px" height="30px" style="border-radius: 50%;">
@@ -136,10 +138,10 @@
                     <div class="wrap">
                         <div class="story">
                             <div class="story-s">
-                                <img class="image" src="" alt="">
+                                <img class="image" src="usman.jpeg" alt="">
                                 <div class="overlay"></div>
                                 <div class="text">
-                                    <img class="avatar" src="usman.jpeg" alt="">
+                                    <img class="avatar" src="" alt="">
                                     <h4>add to story</h4>
                                 </div>
                             </div>
@@ -178,7 +180,7 @@
                                 <div class="overlay"></div>
                                 <div class="text">
                                     <img class="avatar" src="" alt="">
-                                    <h4>add to story</h4>
+                                    <h4 class="story-name">add to story</h4>
                                 </div>
                             </div>
                         </div><div class="story">
@@ -201,9 +203,139 @@
                             </div>
                         </div>
                     </div>
+                    <div class="posting-area">
+                        <img src="arslan.jpg" class="image-1">
+                        <input type="text" placeholder="What's in your mind, Muhammad?" id="written-post">
+                        <i class="fa fa-file-photo-o" style="font-size:20px;" id="res-photo-icon"></i>
+                        <hr>
+                        <div class="row main-posting-div">
+                            <div class="col-sm-4 posting-div" style=" display: flex; align-items: center;">
+                                <div class="posting-div-2">
+                                    <i class="fa fa-video-camera posting-icon" style="font-size: 20px; color:palevioletred;"></i>
+                                    <span class="icon-label">Live Video</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 posting-div">
+                                <div class="posting-div-2">
+                                    <i class="fa fa-file-photo-o" style="font-size:20px; color: rgb(14, 206, 14);"></i>
+                                    <span class="icon-label">Photo/video</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 posting-div">
+                                <div class="posting-div-2">
+                                    <i class="fa-solid fa-face-grin" style="color: yellow; font-size:20px;"></i>
+                                    <span class="icon-label">Feeling/Activity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carosuel">
+                        <div class="row sub-container">
+                            <div class="col-sm-3 creat-room">
+                                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                                <span>Creat Room</span>
+                            </div>
+                            <div class="col-sm-6 room-chat">
+                                <img src="usman.jpeg" class="img">
+                                <img src="papa.PNG" class="img">
+                                <img src="school1.jpg" class="img">
+                                <img src="usman.jpeg" class="img">
+                                <img src="papa.PNG" class="img">
+                                <img src="school1.jpg" class="img"><img src="usman.jpeg" class="img">
+                                <img src="papa.PNG" class="img">
+                                <img src="school1.jpg" class="img"><img src="usman.jpeg" class="img">
+                                <img src="papa.PNG" class="img">
+                                <img src="school1.jpg" class="img"><img src="usman.jpeg" class="img">
+                                <img src="papa.PNG" class="img">
+                                <img src="school1.jpg" class="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="media" style="display: flex; flex-direction: row;">
+                            <div class="media-left media-top" style="margin-top: 10px;">
+                                <img src="arslan.jpg" class="media-object img">
+                            </div>
+                            <div class="media-body" style="margin-top: 10px;">
+                                <h5 class="media-heading">Muhammad Arslan</h5>
+                                <p>20h <i class="fa-solid fa-user-group" style="font-size: 10px;"></i></p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis" id="posting-dots-option"></i>
+                        </div>
+                        <div class="pic-post-div">
+                            <img src="screenshot.png" >
+                        </div>
+                        <div class="like-icon-div">
+                            <div class="like-ico">
+                                <i class="far fa-thumbs-up" style="font-size: 20px;"></i>
+                                <span class="icon-name">Like</span>
+                            </div>
+                            <div class="like-ico">
+                                <i class="far fa-comment-alt" style="font-size: 20px;"></i>
+                                <span class="icon-name">Comment</span>
+                            </div>
+                            <div class="like-ico">
+                                <i class="fa fa-share" style="font-size: 20px;"></i>
+                                <span>Share</span>
+                            </div>
+                            <hr style="color: black;">
+                        </div>
+                        <div class="comment-div">
+                            <img src="arslan.jpg" class="image-1">
+                            <div class="comment-div-1">
+                                <input type="text" placeholder="Write a comment..." id="written-post-1">
+                                <i class="fa-regular fa-face-smile"></i>
+                                <i class="fa-solid fa-camera"></i>
+                                <i class="fa-regular fa-note-sticky"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-3">
-                    <h3>arslan</h3>
+                    <div class="right-div-lg">
+                        <div class="heading">
+                            <p style="font-size: larger; font-weight: bold;" id="contect">Contects</p>
+                            <div class="chating-options">
+                                <i class="fas fa-search" id="srch"></i>
+                                <i class="fas fa-ellipsis-h" id="dots-3"></i>
+                            </div>
+                        </div>
+                        <div class="no-1-1-1">
+                            <img src="papa.PNG" alt="image" class="img">
+                            <p class="our-name">Muhammad Iqbal</p>
+                        </div>
+                        <div class="no-1-1-1">
+                            <img src="usman.jpeg" alt="image" class="img">
+                            <P class="our-name">Muhammad Usman</P>
+                        </div>
+                        <div class="no-1-1-1">
+                            <img src="arslan.jpg" alt="image" class="img">
+                            <p class="our-name">Muhammad Arslan</p>
+                        </div>
+                        <div class="no-1-1-1">
+                            <img src="papa.PNG" alt="image" class="img">
+                            <p class="our-name">Muhammad Iqbal</p>
+                        </div>
+                        <div class="no-1-1-1">
+                            <img src="usman.jpeg" alt="image" class="img">
+                            <P class="our-name">Muhammad Usman</P>
+                        </div>
+                        <div class="no-1-1-1">
+                            <img src="arslan.jpg" alt="image" class="img">
+                            <p class="our-name">Muhammad Arslan</p>
+                        </div><div class="no-1-1-1">
+                            <img src="papa.PNG" alt="image" class="img">
+                            <p class="our-name">Muhammad Iqbal</p>
+                        </div>
+                        <div class="no-1-1-1">
+                            <img src="usman.jpeg" alt="image" class="img">
+                            <P class="our-name">Muhammad Usman</P>
+                        </div>
+                        <div class="no-1-1-1">
+                            <img src="arslan.jpg" alt="image" class="img">
+                            <p class="our-name">Muhammad Arslan</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
